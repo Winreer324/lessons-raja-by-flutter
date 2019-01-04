@@ -1,4 +1,4 @@
-# raja_yogan
+# Raja Yogan
 
 Lessons raja by flutter.
 
