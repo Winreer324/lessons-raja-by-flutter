@@ -2,8 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:raja_yogan/lessons.dart';
 
 //lessons 6
+// Flutter - Input Widgets
 //link video https://www.youtube.com/watch?v=1njN6vu5Aag&list=PLgGjX33Qsw-EMsLf8TmsYhKOCx2ALZiKi&index=7&t=0s
-class MyHomePageState extends State<MyHomePage> {
+class HomePageInputState extends State<MyHomePage> {
 //  1
   final textController = TextEditingController();
   String inputStr = "";
