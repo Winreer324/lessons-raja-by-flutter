@@ -1,6 +1,6 @@
-# raja_yogan
+# Raja Yogan
 
-A new Flutter application.
+Lessons raja by flutter.
 
 ## Getting Started
 
