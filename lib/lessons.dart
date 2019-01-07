@@ -3,6 +3,9 @@ import 'package:raja_yogan/the_lessons/lesson10_maps_markers.dart';
 import 'package:raja_yogan/the_lessons/lesson11_geolocation.dart';
 import 'package:raja_yogan/the_lessons/lesson12_geocoding.dart';
 import 'package:raja_yogan/the_lessons/lesson13_geocoding_firestore.dart';
+import 'package:raja_yogan/the_lessons/lesson14_animations.dart';
+import 'package:raja_yogan/the_lessons/lesson15_gestures.dart';
+import 'package:raja_yogan/the_lessons/lesson16_delayed_animations.dart';
 import 'package:raja_yogan/the_lessons/lesson6_input_widgets.dart';
 import 'package:raja_yogan/the_lessons/lesson7_side_menu.dart';
 import 'package:raja_yogan/the_lessons/lesson8_slivers.dart';
@@ -15,20 +18,36 @@ class MyHomePage extends StatefulWidget {
   @override
   //  6 input widgets
 //    HomePageInputState createState() => HomePageInputState();
+
   //  7 side menu
 //    HomePageMenuState createState() => HomePageMenuState();
+
   //  8 slivers
 //  HomePageSliversState createState() => HomePageSliversState();
+
   //  9 chars
 //  HomePageChartsState createState() => HomePageChartsState();
+
   //  10 Maps & Markers
 //  HomePageMapsMarkersState createState() => HomePageMapsMarkersState();
+
   //  11 Geolocation with maps
 //  HomePageGeolocationState createState() => HomePageGeolocationState();
+
   //  12 Geocoding with maps
 //  HomePageGeocodingState createState() => HomePageGeocodingState();
+
   //  13 Retrieving markers from Firestore
-  HomePageGeocodingFirestoreState createState() => HomePageGeocodingFirestoreState();
+//  HomePageGeocodingFirestoreState createState() => HomePageGeocodingFirestoreState();
+
+  //  14 Animations Flutter - Gestures
+//  HomePageAnimationsState createState() => HomePageAnimationsState();
+
+  //  15 Gestures
+//  HomePageGesturesState createState() => HomePageGesturesState();
+
+  //  16 Delayed Animations
+  HomePageDelayedAnimationsState createState() => HomePageDelayedAnimationsState();
 }
 
 

@@ -94,8 +94,8 @@ class HomePageGeocodingFirestoreState extends State<MyHomePage> {
           );
         }
         return FlutterMap(
-            options:  MapOptions(
-                center:  LatLng(40.71, -74.00), minZoom: 10.0),
+            options: MapOptions(
+                center: LatLng(47.22, 39.71), minZoom: 10.0),
             layers: [
               TileLayerOptions(
                   urlTemplate:
