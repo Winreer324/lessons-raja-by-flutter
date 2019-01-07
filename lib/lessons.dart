@@ -6,6 +6,10 @@ import 'package:raja_yogan/the_lessons/lesson13_geocoding_firestore.dart';
 import 'package:raja_yogan/the_lessons/lesson14_animations.dart';
 import 'package:raja_yogan/the_lessons/lesson15_gestures.dart';
 import 'package:raja_yogan/the_lessons/lesson16_delayed_animations.dart';
+import 'package:raja_yogan/the_lessons/lesson17_parenting_animations.dart';
+import 'package:raja_yogan/the_lessons/lesson18_transforming_animations.dart';
+import 'package:raja_yogan/the_lessons/lesson19_value_change_animations.dart';
+import 'package:raja_yogan/the_lessons/lesson20_mixing_animations_with_ui.dart';
 import 'package:raja_yogan/the_lessons/lesson6_input_widgets.dart';
 import 'package:raja_yogan/the_lessons/lesson7_side_menu.dart';
 import 'package:raja_yogan/the_lessons/lesson8_slivers.dart';
@@ -47,7 +51,19 @@ class MyHomePage extends StatefulWidget {
 //  HomePageGesturesState createState() => HomePageGesturesState();
 
   //  16 Delayed Animations
-  HomePageDelayedAnimationsState createState() => HomePageDelayedAnimationsState();
+//  HomePageDelayedAnimationsState createState() => HomePageDelayedAnimationsState();
+
+  //  17 Parenting Animations
+//  HomePageParentingAnimationsState createState() => HomePageParentingAnimationsState();
+
+  //  18 Transforming Animations
+//  HomePageTransformingAnimationsState createState() => HomePageTransformingAnimationsState();
+
+  //  19 Value Change Animations Animations
+//  HomePageValueChangeAnimationsState createState() => HomePageValueChangeAnimationsState();
+
+//  20 Mixing animations with UI
+  HomePageMixingAnimationsState createState() => HomePageMixingAnimationsState();
 }
 
 
