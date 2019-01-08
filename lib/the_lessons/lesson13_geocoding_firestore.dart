@@ -69,7 +69,7 @@ class HomePageGeocodingFirestoreState extends State<MyHomePage> {
     return StreamBuilder(
       stream: Firestore.instance.collection("markers").snapshots(),
       builder: (context, snapshot){
-        if(!snapshot.hasData){return Text("Loading maps.... Please Wait!");}
+        if(!snapshot.hasData){return Center(child: Text("Loading maps.... Please Wait!"));}
         for(int i=0; i < snapshot.data.documents.length; i++){
           print(snapshot.data.documents[i]["coords"]);
           allMarkers.add(

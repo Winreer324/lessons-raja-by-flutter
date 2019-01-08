@@ -15,8 +15,8 @@ class HomePageMixingAnimationsState extends State<MyHomePage> with SingleTickerP
     super.initState();
     animationController = AnimationController(duration: Duration(milliseconds: 500),vsync: this);
 
-    animation = Tween(begin: 0, end: -0.15).animate(
-        CurvedAnimation(parent: animationController, curve: Curves.bounceIn));
+    animation = Tween(begin: 0, end: -0.20).animate(
+        CurvedAnimation(parent: animationController, curve: Curves.linear));
 
   }
 
@@ -36,7 +36,7 @@ class HomePageMixingAnimationsState extends State<MyHomePage> with SingleTickerP
               children: <Widget>[
                 Center(
                   child: Container(
-                    padding: EdgeInsets.only(top: 25),
+                    padding: EdgeInsets.all(10),
                     width: 350,
                     height: 200,
                     decoration: BoxDecoration(
@@ -68,7 +68,7 @@ class HomePageMixingAnimationsState extends State<MyHomePage> with SingleTickerP
                   child: GestureDetector(
                     child: Container(
                       alignment: Alignment.bottomCenter,
-                      width: 370,
+                      width: 350,
                       height: 200,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(15),

@@ -65,7 +65,7 @@ class HomePageAnimationsState extends State<MyHomePage> with SingleTickerProvide
                         Text("Don't have account?"),
                         SizedBox(height: 20,),
                         OutlineButton(
-                            child: Text("Signup"),
+                            child: Text("Sign Up"),
                             color: Colors.lightGreen,
                             textColor: Colors.green,
                             borderSide: BorderSide(
