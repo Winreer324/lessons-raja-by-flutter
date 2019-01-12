@@ -6,7 +6,12 @@ import 'package:raja_yogan/lessons.dart';
 // Flutter - Value Change  Animations
 //link video https://www.youtube.com/watch?v=9vkXet7xqLI&index=27&list=PLgGjX33Qsw-EMsLf8TmsYhKOCx2ALZiKi
 
-class HomePageValueChangeAnimationsState extends State<MyHomePage> with SingleTickerProviderStateMixin{
+class HomePageValueChangeAnimations  extends StatefulWidget {
+  @override
+  HomePageValueChangeAnimationsState createState() => HomePageValueChangeAnimationsState();
+}
+
+class HomePageValueChangeAnimationsState extends State<HomePageValueChangeAnimations> with SingleTickerProviderStateMixin{
   Animation animation;
   AnimationController animationController;
 

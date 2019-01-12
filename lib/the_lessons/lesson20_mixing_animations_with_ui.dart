@@ -6,7 +6,12 @@ import 'package:raja_yogan/lessons.dart';
 // Flutter - Mixing animations with UI
 //link video https://www.youtube.com/watch?v=OVM8nlemVEs&index=28&list=PLgGjX33Qsw-EMsLf8TmsYhKOCx2ALZiKi
 
-class HomePageMixingAnimationsState extends State<MyHomePage> with SingleTickerProviderStateMixin{
+class HomePageMixingAnimations  extends StatefulWidget {
+  @override
+  HomePageMixingAnimationsState createState() => HomePageMixingAnimationsState();
+}
+
+class HomePageMixingAnimationsState extends State<HomePageMixingAnimations> with SingleTickerProviderStateMixin{
   Animation animation;
   AnimationController animationController;
 

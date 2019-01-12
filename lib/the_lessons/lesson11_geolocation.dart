@@ -9,7 +9,12 @@ import 'package:latlong/latlong.dart';
 // Flutter - Geolocation with maps
 //link video https://www.youtube.com/watch?v=I3bhRb6f5dA&index=14&list=PLgGjX33Qsw-EMsLf8TmsYhKOCx2ALZiKi
 
-class HomePageGeolocationState extends State<MyHomePage> {
+class HomePageGeolocation  extends StatefulWidget {
+  @override
+  HomePageGeolocationState createState() => HomePageGeolocationState();
+}
+
+class HomePageGeolocationState extends State<HomePageGeolocation> {
   MapController controller = new MapController();
 
   getPermission() async {

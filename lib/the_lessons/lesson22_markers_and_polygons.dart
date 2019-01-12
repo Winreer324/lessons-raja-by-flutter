@@ -6,6 +6,11 @@ import 'package:raja_yogan/lessons.dart';
 // Flutter - Google Maps, Markers and Polygons
 //link video https://www.youtube.com/watch?v=UFJyCaScKD4&index=31&list=PLgGjX33Qsw-EMsLf8TmsYhKOCx2ALZiKi
 
+class HomePageMarkersPolygons  extends StatefulWidget {
+  @override
+  HomePageMarkersPolygonsState createState() => HomePageMarkersPolygonsState();
+}
+
 class HomePageMarkersPolygonsState extends State<MyHomePage> {
 //  MapView mapView = new MapView();
 

@@ -13,13 +13,38 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 //link video https://www.youtube.com/watch?v=NZRocXb7qwU&index=17&list=PLgGjX33Qsw-EMsLf8TmsYhKOCx2ALZiKi
 // https://www.youtube.com/watch?v=Rxf4pajebsM&index=18&list=PLgGjX33Qsw-EMsLf8TmsYhKOCx2ALZiKi
 
-class HomePageGeocodingFirestoreState extends State<MyHomePage> {
+class HomePageGeocodingFirestore  extends StatefulWidget {
+  @override
+  HomePageGeocodingFirestoreState createState() => HomePageGeocodingFirestoreState();
+}
+
+class HomePageGeocodingFirestoreState extends State<HomePageGeocodingFirestore> {
 
   List<Marker> allMarkers = [];
 
   String addLocation = "";
 
   setMarkers() {
+    allMarkers.add(
+        Marker(
+            width: 45.0,
+            height: 45.0,
+            point: LatLng(
+                47.22,
+                39.71
+            ),
+            builder: (context) => Container(
+              child: IconButton(
+                icon: Icon(Icons.location_on),
+                color: Colors.red,
+                iconSize: 45.0,
+                onPressed: () {
+                  print( "rnd lol");
+                },
+              ),
+            )
+        )
+    );
     return allMarkers;
   }
 

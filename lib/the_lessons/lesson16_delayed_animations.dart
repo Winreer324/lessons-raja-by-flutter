@@ -6,7 +6,12 @@ import 'package:raja_yogan/lessons.dart';
 // Flutter - Delayed Animations
 //link video https://www.youtube.com/watch?v=yVTjoy9sK1k&index=24&list=PLgGjX33Qsw-EMsLf8TmsYhKOCx2ALZiKi
 
-class HomePageDelayedAnimationsState extends State<MyHomePage> with SingleTickerProviderStateMixin{
+class HomePageDelayedAnimations  extends StatefulWidget {
+  @override
+  HomePageDelayedAnimationsState createState() => HomePageDelayedAnimationsState();
+}
+
+class HomePageDelayedAnimationsState extends State<HomePageDelayedAnimations> with SingleTickerProviderStateMixin{
   Animation animation, delayedA, muchDelayedA;
   AnimationController animationController;
 

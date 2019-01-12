@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 //import 'package:map_view/map_view.dart';
 import 'package:raja_yogan/lessons.dart';
+import 'package:raja_yogan/the_lessons/lesson9_charts.dart';
 
 void main()  =>
 //  MapView.setApiKey("AIzaSyB3KVsH0QWldXUampPjgIvQKegYjjpxsVo");
@@ -18,6 +19,11 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: MyHomePage(),
+      routes: <String, WidgetBuilder>{
+        "/charts": (BuildContext context) => HomePageCharts(),
+        "/home": (BuildContext context) => MyHomePage()
+      },
+//      home: HomePageCharts(),
     );
   }
 }

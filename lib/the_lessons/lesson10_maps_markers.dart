@@ -7,7 +7,12 @@ import 'package:latlong/latlong.dart';
 // Flutter - Maps & Markers
 //link video https://www.youtube.com/watch?v=qme30VC1yqk&index=13&list=PLgGjX33Qsw-EMsLf8TmsYhKOCx2ALZiKi
 
-class HomePageMapsMarkersState extends State<MyHomePage> {
+class HomePageMapsMarkers  extends StatefulWidget {
+  @override
+  HomePageMapsMarkersState createState() => HomePageMapsMarkersState();
+}
+
+class HomePageMapsMarkersState extends State<HomePageMapsMarkers> {
 
   @override
   Widget build(BuildContext context) {

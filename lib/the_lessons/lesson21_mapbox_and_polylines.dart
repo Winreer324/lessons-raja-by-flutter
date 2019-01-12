@@ -8,7 +8,12 @@ import 'package:latlong/latlong.dart';
 //link video https://www.youtube.com/watch?v=oc1mktx0Zn8&index=29&list=PLgGjX33Qsw-EMsLf8TmsYhKOCx2ALZiKi
 // https://www.mapbox.com/account/      для создание статической мапы
 
-class HomePageMapboxPolylinesState extends State<MyHomePage> {
+class HomePageMapboxPolylines  extends StatefulWidget {
+  @override
+  HomePageMapboxPolylinesState createState() => HomePageMapboxPolylinesState();
+}
+
+class HomePageMapboxPolylinesState extends State<HomePageMapboxPolylines> {
   String url = "https://api.mapbox.com/styles/v1/winreer321/cjqml4sdv54nq2smia95aut4l/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1Ijoid2lucmVlcjMyMSIsImEiOiJjanFta2NmOXgwMnJxNDRvYzd4dWg0dG50In0.A7sA8aJn7bXrOYGUotvIJw";
 
   var points = <LatLng>[

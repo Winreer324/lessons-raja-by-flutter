@@ -27,7 +27,7 @@ class MyHomePage extends StatefulWidget {
 //    HomePageInputState createState() => HomePageInputState();
 
   //  7 side menu
-//    HomePageMenuState createState() => HomePageMenuState();
+    HomePageMenuState createState() => HomePageMenuState();
 
   //  8 slivers
 //  HomePageSliversState createState() => HomePageSliversState();
@@ -45,7 +45,7 @@ class MyHomePage extends StatefulWidget {
 //  HomePageGeocodingState createState() => HomePageGeocodingState();
 
   //  13 Retrieving markers from Firestore
-  HomePageGeocodingFirestoreState createState() => HomePageGeocodingFirestoreState();
+//  HomePageGeocodingFirestoreState createState() => HomePageGeocodingFirestoreState();
 
   //  14 Animations Flutter - Gestures
 //  HomePageAnimationsState createState() => HomePageAnimationsState();

@@ -19,8 +19,8 @@ dependencies:
   firebase_auth:
   cloud_firestore:
 
-  firebase_analytics: ^1.0.4
-  firebase_core: ^0.2.5
+#  firebase_analytics: ^1.0.4
+#  firebase_core: ^0.2.5
 
   flutter:
     sdk: flutter

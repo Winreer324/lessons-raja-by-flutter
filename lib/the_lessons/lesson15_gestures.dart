@@ -6,7 +6,12 @@ import 'package:raja_yogan/lessons.dart';
 // Flutter - Gestures
 //link video https://www.youtube.com/watch?v=uLw3FicM6AM&index=22&list=PLgGjX33Qsw-EMsLf8TmsYhKOCx2ALZiKi
 
-class HomePageGesturesState extends State<MyHomePage> {
+class HomePageGestures  extends StatefulWidget {
+  @override
+  HomePageGesturesState createState() => HomePageGesturesState();
+}
+
+class HomePageGesturesState extends State<HomePageGestures> {
 
   @override
   Widget build(BuildContext context) {

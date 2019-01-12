@@ -6,7 +6,12 @@ import 'package:raja_yogan/lessons.dart';
 // Flutter - Animations
 //link video https://www.youtube.com/watch?v=VFSQeLOP504&list=PLgGjX33Qsw-EMsLf8TmsYhKOCx2ALZiKi&index=20
 
-class HomePageAnimationsState extends State<MyHomePage> with SingleTickerProviderStateMixin{
+class HomePageAnimations  extends StatefulWidget {
+  @override
+  HomePageAnimationsState createState() => HomePageAnimationsState();
+}
+
+class HomePageAnimationsState extends State<HomePageAnimations> with SingleTickerProviderStateMixin{
   Animation animation;
   AnimationController animationController;
 

@@ -10,7 +10,13 @@ import 'package:raja_yogan/lessons.dart';
 // part 2 https://www.youtube.com/watch?v=a0xO1LQ656k&index=11&list=PLgGjX33Qsw-EMsLf8TmsYhKOCx2ALZiKi
 // part 3 https://www.youtube.com/watch?v=VVj11C-C1HA&index=12&list=PLgGjX33Qsw-EMsLf8TmsYhKOCx2ALZiKi
 
-class HomePageChartsState extends State<MyHomePage> {
+class HomePageCharts  extends StatefulWidget {
+  @override
+  HomePageChartsState createState() => HomePageChartsState();
+}
+
+class HomePageChartsState extends State<HomePageCharts> {
+
   final GlobalKey<AnimatedCircularChartState> _chartKey =
   new GlobalKey<AnimatedCircularChartState>();
 
@@ -30,23 +36,23 @@ class HomePageChartsState extends State<MyHomePage> {
     labelColor = dialColor;
 
     List<CircularStackEntry> data = [
-      new CircularStackEntry(
-          [new CircularSegmentEntry(adjustedSeconds, dialColor)])
+      CircularStackEntry(
+        [CircularSegmentEntry(adjustedSeconds, dialColor)])
     ];
 
     if (min > 0) {
       labelColor = Colors.green;
       data.removeAt(0);
-      data.add(new CircularStackEntry(
-          [new CircularSegmentEntry(adjustedSeconds, dialColor)]));
-      data.add(new CircularStackEntry(
-          [new CircularSegmentEntry(adjustedMinutes, Colors.green)]));
+      data.add(CircularStackEntry(
+          [CircularSegmentEntry(adjustedSeconds, dialColor)]));
+      data.add(CircularStackEntry(
+          [CircularSegmentEntry(adjustedMinutes, Colors.green)]));
     }
 
     return data;
   }
 
-  Stopwatch watch = new Stopwatch();
+  Stopwatch watch = Stopwatch();
   Timer timer;
 
   String elapsedTime = '';
@@ -71,23 +77,31 @@ class HomePageChartsState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
+//    return Scaffold(
+//      appBar: AppBar(
+//        title: Text("adf"),
+//      ),
+//      body: Center(
+//        child: Text("center"),
+//      ),
+//    );
     TextStyle _labelStyle = Theme
         .of(context)
         .textTheme
         .title
-        .merge(new TextStyle(color: labelColor));
-    return new Scaffold(
-        appBar: new AppBar(
+        .merge(TextStyle(color: labelColor));
+    return Scaffold(
+        appBar: AppBar(
           centerTitle: true,
-          title: new Text('StopWatch (Charts)'),
+          title:  Text('StopWatch (Charts)'),
         ),
-        body: new Container(
+        body: Container(
             padding: EdgeInsets.all(20.0),
-            child: new Column(
+            child: Column(
               children: <Widget>[
-                // new Text(elapsedTime, style: new TextStyle(fontSize: 25.0)),
-                new Container(
-                  child: new AnimatedCircularChart(
+                Text(elapsedTime, style: TextStyle(fontSize: 25.0)),
+                Container(
+                  child: AnimatedCircularChart(
                     key: _chartKey,
                     size: _chartSize,
                     initialChartData: _generateChartData(0, 0),
@@ -98,28 +112,41 @@ class HomePageChartsState extends State<MyHomePage> {
                     labelStyle: _labelStyle,
                   ),
                 ),
-                SizedBox(height: 20.0),
-                new Row(
+                SizedBox(height: 20.0), Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
-                    new FloatingActionButton(
+                    FloatingActionButton(
                         backgroundColor: Colors.green,
                         onPressed: startWatch,
                         child: new Icon(Icons.play_arrow)),
                     SizedBox(width: 20.0),
-                    new FloatingActionButton(
+                    FloatingActionButton(
                         backgroundColor: Colors.red,
                         onPressed: stopWatch,
                         child: new Icon(Icons.stop)),
                     SizedBox(width: 20.0),
-                    new FloatingActionButton(
+                    FloatingActionButton(
                         backgroundColor: Colors.blue,
                         onPressed: resetWatch,
                         child: new Icon(Icons.refresh)),
                   ],
+                ),
+                SizedBox(height: 20,),
+                OutlineButton(
+                  child: Text("Back"),
+                  borderSide: BorderSide(
+                    color: Colors.amber,
+                    width: 4,
+                    style: BorderStyle.solid
+                  ),
+                  onPressed: (){
+                    Navigator.of(context).pushReplacementNamed("/home");
+                  },
                 )
               ],
-            )));
+            )
+        )
+    );
   }
 
   startWatch() {

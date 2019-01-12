@@ -6,7 +6,12 @@ import 'package:raja_yogan/lessons.dart';
 // Flutter - Transforming  Animations
 //link video https://www.youtube.com/watch?v=JcbF1E6B0CI&index=26&list=PLgGjX33Qsw-EMsLf8TmsYhKOCx2ALZiKi
 
-class HomePageTransformingAnimationsState extends State<MyHomePage> with SingleTickerProviderStateMixin{
+class HomePageTransformingAnimations  extends StatefulWidget {
+  @override
+  HomePageTransformingAnimationsState createState() => HomePageTransformingAnimationsState();
+}
+
+class HomePageTransformingAnimationsState extends State<HomePageTransformingAnimations> with SingleTickerProviderStateMixin{
   Animation animation, transA;
   AnimationController animationController;
 

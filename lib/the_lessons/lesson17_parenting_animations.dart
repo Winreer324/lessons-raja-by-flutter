@@ -6,7 +6,12 @@ import 'package:raja_yogan/lessons.dart';
 // Flutter - Parenting Animations
 //link video https://www.youtube.com/watch?v=CfgftDXeigo&list=PLgGjX33Qsw-EMsLf8TmsYhKOCx2ALZiKi&index=25
 
-class HomePageParentingAnimationsState extends State<MyHomePage> with SingleTickerProviderStateMixin{
+class HomePageParentingAnimations  extends StatefulWidget {
+  @override
+  HomePageParentingAnimationsState createState() => HomePageParentingAnimationsState();
+}
+
+class HomePageParentingAnimationsState extends State<HomePageParentingAnimations> with SingleTickerProviderStateMixin{
   Animation animation, childA;
   AnimationController animationController;
 

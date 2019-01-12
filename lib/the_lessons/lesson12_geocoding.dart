@@ -9,7 +9,12 @@ import 'package:geocoder/geocoder.dart';
 // Flutter - Geocoding with maps
 //link video https://www.youtube.com/watch?v=NT9-l2CuRHM&list=PLgGjX33Qsw-EMsLf8TmsYhKOCx2ALZiKi&index=16
 
-class HomePageGeocodingState extends State<MyHomePage> {
+class HomePageGeocoding  extends StatefulWidget {
+  @override
+  HomePageGeocodingState createState() => HomePageGeocodingState();
+}
+
+class HomePageGeocodingState extends State<HomePageGeocoding> {
 
   List<Marker> allMarkers = [];
 

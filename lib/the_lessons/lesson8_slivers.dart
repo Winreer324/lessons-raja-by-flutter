@@ -6,7 +6,12 @@ import 'package:raja_yogan/the_lessons/lesson7_side_menu_about.dart';
 //Flutter - Slivers
 //link video https://www.youtube.com/watch?v=4eflzbjTEkw&index=9&list=PLgGjX33Qsw-EMsLf8TmsYhKOCx2ALZiKi
 
-class HomePageSliversState extends State<MyHomePage> {
+class HomePageSlivers  extends StatefulWidget {
+  @override
+  HomePageSliversState createState() => HomePageSliversState();
+}
+
+class HomePageSliversState extends State<HomePageSlivers> {
 
   @override
   Widget build(BuildContext context) {
